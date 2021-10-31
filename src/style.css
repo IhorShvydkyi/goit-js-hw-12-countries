@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(92, 118, 133);
+}
+
+.input-box {
+  margin: 20px;
+  padding: 20px;
+}
+
+.country-title {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 0.0015em;
+  text-align: center;
+}
+
+.country_items {
+  font-weight: 400;
+  font-size: 26px;
+  margin: 5px;
+}
+.country_items-discr {
+  font-weight: 700;
+}
+
+.country_box {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  margin: 0;
+}
+
+.country {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
