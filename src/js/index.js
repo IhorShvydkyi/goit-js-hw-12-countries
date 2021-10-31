@@ -16,7 +16,6 @@ refs.searchInput.addEventListener("input", _.debounce(onInputChange, 500));
 function onInputChange(evt) {
     evt.preventDefault();
 
-// const input = evt.currentTarget;
 const searchQuery = evt.target.value;
 
 API.fetchCountries(searchQuery)
@@ -28,7 +27,7 @@ API.fetchCountries(searchQuery)
 function onFetchError() {
     error({
     title: false,
-    text: 'Too many matches found. Please enter a more specific query!=)',
+    text: 'Too many matches found. Please enter a more specific query!',
     shadow: true,
     delay: 1000,
 })}
